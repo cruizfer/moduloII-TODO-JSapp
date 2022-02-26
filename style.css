@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&family=Ubuntu+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
+
+/* font-family: 'Roboto Mono', monospace;
+font-family: 'Ubuntu Mono', monospace;
+font-family: 'Patrick Hand SC', cursive; */
+
+:root {
+    --main-color:rgb(83, 167, 90);
+    --main-fontFamily: 'Roboto Mono', monospace;
+}
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--main-fontFamily);
+    line-height: 1.5;
+    background-image: url(./plant-layout.jpg);
+  }
+  
+  h1 {
+    padding: 10px 0px;
+    text-align: center;
+    color: rgb(58, 123, 63);
+    font-family:var(--main-fontFamily);
+    font-size: 2.5em;
+  }
+h2{
+    color: var(--main-color);
+    font-size: 1.5em;
+    text-align: center;
+}
+  main{
+    border: 5px solid var(--main-color);
+    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+  }
+
+  #taskInclusion {
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  #taskInclusion input {
+    padding: 15px 10px;
+    outline: none;
+    width: 70%;
+    border: none;
+    border-bottom: 2px solid rgb(58, 123, 63);;
+    margin-right: 50px;
+  }
+  #taskInclusion select{
+  
+    padding: 15px 10px;
+    outline: none;
+    width: 20%;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+  }
+#btn-add{
+    padding: 15px 15px;
+    border:none;
+    border-radius: 3px;
+    color: white;
+    font-family: var(--main-fontFamily);
+    background-color: var(--main-color);
+    outline: none;
+    width: 10%;
+  }
+  #btn-add:hover {
+    cursor: pointer;
+    border-radius: 3px;
+    background-color: rgb(58, 123, 63);
+  }
+
+  #taskFilter{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+  }
+  #taskFilter input {
+    padding: 15px 10px;
+    outline: none;
+    width: 80%;
+    border: none;
+    border-bottom: 2px solid rgb(58, 123, 63);
+    margin-right: 50px;
+  }
+  #taskFilter select{
+    padding: 15px 10px;
+    outline: none;
+    width: 35%;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    border-radius: 3px;
+  }
+  
+  #list-container {
+    width: 100%;
+    color: var(--main-color);
+    margin-top: 20px;
+  }
+  
+   
+  li {
+    list-style: none;
+    background-color: var(--main-color);
+    color: white;
+    padding:15px 15px;
+    border-radius: 3px;
+    margin-top: 15px;
+    display: flex;
+  }
+  
+  
+  .btn-delete {
+    margin-left: auto;
+    border: none;
+    background-color: white;
+    color: var(--main-color);
+    font-weight: bold;
+    padding: 5px 10px;
+    outline: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    width: 10%;
+    font-size: 1.2em;
+  }
+  
+  .btn-delete:hover {
+    cursor: pointer;
+    background-color: rgb(58, 123, 63);
+  }
+  
+  
+  /* #empty {
+    margin-top: 50px;
+    color: darkslategrey;
+  } */
+
+
