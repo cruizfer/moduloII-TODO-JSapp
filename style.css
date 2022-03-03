@@ -10,15 +10,18 @@ font-family: 'Patrick Hand SC', cursive; */
     --main-color:rgb(83, 167, 90);
     --main-fontFamily: 'Roboto Mono', monospace;
 }
+
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 body {
     font-family: var(--main-fontFamily);
     line-height: 1.5;
-    background-image: url(plant-layout-2.jpg);
+    background-image: url(images/plant-layout-2.jpg);
     background-size:cover;  
   }
   h1 {
@@ -34,6 +37,7 @@ h2{
     font-size: 1.25em;
     text-align: center;
     padding-top: 10px;
+
 }
 main{
     
@@ -48,7 +52,7 @@ main{
   }
 
   #taskInclusion {
-    margin-top: 30px;
+    margin-top: 40px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -78,7 +82,7 @@ main{
 #btn-add{
     padding: 9px 12px;
     border:none;
-    font-size: 1.5em;
+    font-size: 1.42em;
     color: white;
     font-family: var(--main-fontFamily);
     background-color: var(--main-color);
@@ -94,11 +98,12 @@ main{
   }
 
   #taskFilter{
-    margin-top: 15px;
+    margin: 15px 0px;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;  
+    justify-content: center; 
+    
   }
   #taskFilter input {
     padding: 15px 10px;
@@ -108,15 +113,15 @@ main{
     border-bottom: 2px solid rgb(58, 123, 63);
     margin-right: 50px;
     background-color: transparent;
+    
   }
   #taskFilter select{
     padding: 15px 10px;
     outline: none;
-    width: 30%;
+    width: 40%;
     color: var(--main-color);
     border: 1px solid var(--main-color);
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
+    border-radius: 3px;
   }
   #btn-find{
     padding: 15px 10px;
@@ -136,41 +141,53 @@ main{
     border-radius: 3px;
     background-color: rgb(58, 123, 63);
   }
-  #list-container {
+  #listContainer {
     width: 100%;
     color: var(--main-color);
-    margin-top: 20px;
+    padding-top: 15px;
+
+   
   }
  
-  li {
-    list-style: none;
-    background-color: var(--main-color);
+  article {
+
+    background-color:var(--main-color);
     border-radius: 3px;
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
+    
   }
-  li p {
-    color: white;
-    padding:15px 15px;
+
+  article div{
+    padding: 15px 10px;
     width: 90%;
-  } 
+    color: white;
+  
+  
+  }
+
+ article div h4{
+    display: none;
+  }
+  article div p{
+    display: none;
+  }
+  
   .btn-delete {
     width: 10%;
     border: none;
-    background-color: var(--main-color);
+    background-color: rgb(83, 167, 90, 0.7);
     color: white;
     font-weight: bold;
     outline: none;
-    font-size: 1.2em;
+    font-size: 1.2em; 
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+
   }
   .btn-delete:hover {
     cursor: pointer;
-    background-color: rgb(58, 123, 63);
+    background-color: rgb(58, 123, 63,0.7);
   }
   
-  
-  /* #empty {
-    margin-top: 50px;
-    color: darkslategrey;
-  } */
-
+ 
