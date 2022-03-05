@@ -98,13 +98,17 @@ function printNewTask(event) {
 
 //Filter by priority
 priorityFilter.addEventListener('change', (event) => {
-    const filteredTasks = [];
-    for (let task of tasksList) {
-        if (task.priority === event.target.value) {
-            filteredTasks.push(task);
+    if (event.target.value === 'Select') {
+        printTaskList(tasksList, section);
+    } else {
+        const filteredTasks = [];
+        for (let task of tasksList) {
+            if (task.priority === event.target.value) {
+                filteredTasks.push(task);
+            }
         }
+        printTaskList(filteredTasks, section);
     }
-    printTaskList(filteredTasks, section);
 });
 
 //Filter by word
